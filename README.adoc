@@ -103,7 +103,6 @@ Several of these projects are enumerated below.
 * {Asciidoctor_}
 * {Caddy}
 * {Fedora-IoT}
-* {fish}
 * {Podman}
 * {pre-commit}
 
