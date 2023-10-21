@@ -1,0 +1,3 @@
+jellyfin.jwillikers.io, jellyfin.lan.jwillikers.io {
+	reverse_proxy jellyfin-pod.dns.podman:8096
+}

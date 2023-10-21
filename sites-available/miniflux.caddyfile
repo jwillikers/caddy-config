@@ -1,0 +1,3 @@
+miniflux.jwillikers.io, miniflux.lan.jwillikers.io {
+	reverse_proxy miniflux-pod.dns.podman:8080
+}

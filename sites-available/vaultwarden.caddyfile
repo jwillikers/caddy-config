@@ -1,0 +1,20 @@
+https://vault.jwillikers.io, https://vault.lan.jwillikers.io {
+	log {
+		level INFO
+		output file /data/access.log {
+			roll_size 10MB
+			roll_keep 10
+		}
+	}
+
+	# This setting may have compatibility issues with some browsers
+	# (e.g., attachment downloading on Firefox). Try disabling this
+	# if you encounter issues.
+	encode gzip
+
+	# Notifications redirected to the WebSocket server
+	reverse_proxy /notifications/hub vaultwarden-pod.dns.podman:3012
+
+	# Proxy everything else to Rocket
+	reverse_proxy vaultwarden-pod.dns.podman:8080
+}

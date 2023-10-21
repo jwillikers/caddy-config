@@ -1,0 +1,3 @@
+code.jwillikers.io, code.lan.jwillikers.io {
+	reverse_proxy code-server-pod.dns.podman:8080
+}
