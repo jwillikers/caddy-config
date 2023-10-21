@@ -17,6 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check Caddyfile formatting
-        run: podman run -it --rm --volume $PWD/Caddyfile:/srv/Caddyfile:Z docker.io/caddy:latest caddy fmt --overwrite
+        run: podman run -it --rm --volume $PWD:/srv:Z docker.io/caddy:latest caddy fmt --overwrite
       - name: Validate Caddyfile
-        run: podman run -it --rm --volume $PWD/Caddyfile:/srv/Caddyfile:Z quay.io/jwillikers/caddy-cloudflare:latest caddy validate
+        run: podman run -it --rm --volume $PWD:/srv:Z quay.io/jwillikers/caddy-ovh:latest caddy validate
