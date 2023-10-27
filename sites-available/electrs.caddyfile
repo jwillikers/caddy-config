@@ -1,3 +1,3 @@
-electrs.jwillikers.io, electrs.lan.jwillikers.io, electrs.jwillikers.io:50002, electrs.lan.jwillikers.io:50002 {
+electrs.jwillikers.io, electrs.lan.jwillikers.io {
 	reverse_proxy bitcoin-core-pod.dns.podman:50001
 }
