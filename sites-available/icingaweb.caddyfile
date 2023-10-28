@@ -1,0 +1,3 @@
+icingaweb.jwillikers.io, icingaweb.lan.jwillikers.io {
+	reverse_proxy icingaweb-pod.dns.podman:8080
+}
