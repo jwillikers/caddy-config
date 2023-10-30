@@ -43,7 +43,7 @@ git clone git@github.com:jwillikers/caddy-config.git
 cd caddy-config
 ----
 
-. Symlink sites from the `sites-available` subdirectory to the `sites-available` subdirectory to enable them.
+. Symlink sites from the `sites-available` subdirectory to the `sites-enabled` subdirectory to enable them.
 +
 [,sh]
 ----
