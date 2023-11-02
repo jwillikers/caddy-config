@@ -28,34 +28,3 @@
 		}
 	}
 }
-{
-	"apps": {
-		"layer4": {
-			"servers": {
-				"electrs.jwillikers.io": {
-					"listen": ["127.0.0.1:5000"],
-					"routes": [
-						{
-							"handle": [
-								{"handler": "tls"},
-								{"handler": "echo"}
-							]
-						}
-					]
-				}
-			}
-		},
-		"tls": {
-			"certificates": {
-				"automate": ["localhost"]
-			},
-			"automation": {
-				"policies": [
-					{
-						"issuers": [{"module": "internal"}]
-					}
-				]
-			}
-		}
-	}
-}
