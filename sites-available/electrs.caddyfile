@@ -1,3 +1,61 @@
-electrs.jwillikers.io {
-	reverse_proxy bitcoin-core-pod.dns.podman:50001
+{
+	"apps": {
+		"layer4": {
+			"servers": {
+				"localhost": {
+					"listen": ["0.0.0.0:443"],
+					"routes": [
+						{
+							"match": [
+								{
+									"tls": {
+										"sni": ["electrs.jwillikers.io"]
+									}
+								}
+							],
+							"handle": [
+								{
+									"handler": "proxy",
+									"upstreams": [
+										{"dial": ["bitcoin-core-pod.dns.podman:50001"]}
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}
+{
+	"apps": {
+		"layer4": {
+			"servers": {
+				"electrs.jwillikers.io": {
+					"listen": ["127.0.0.1:5000"],
+					"routes": [
+						{
+							"handle": [
+								{"handler": "tls"},
+								{"handler": "echo"}
+							]
+						}
+					]
+				}
+			}
+		},
+		"tls": {
+			"certificates": {
+				"automate": ["localhost"]
+			},
+			"automation": {
+				"policies": [
+					{
+						"issuers": [{"module": "internal"}]
+					}
+				]
+			}
+		}
+	}
 }
