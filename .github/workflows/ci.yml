@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: hustcer/setup-nu@v3.8
         with:
-          version: "0.80"
+          version: "0.86"
       - name: Check formatting of the Caddyfiles
         shell: nu {0}
         run: |
