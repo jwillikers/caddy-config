@@ -23,12 +23,12 @@ jobs:
         shell: nu {0}
         run: |
           for file in (glob "sites-available/*.caddyfile") {
-            podman run -it --rm --volume (pwd):/srv:Z docker.io/caddy:latest caddy fmt $"sites-available/($file | path basename)"
+            ^podman run -it --rm --volume $"(pwd):/srv:Z" docker.io/caddy:latest caddy fmt $"sites-available/($file | path basename)"
           }
       - name: Validate the Caddyfiles
         shell: nu {0}
         run: |
           for file in (glob "sites-available/*.caddyfile") {
-            ln --relative --symbolic $file $"sites-enabled/($file | path basename)"
+            ^ln --relative --symbolic $file $"sites-enabled/($file | path basename)"
           }
-          podman run -it --rm --volume (pwd):/srv:Z quay.io/jwillikers/caddy-ovh:latest caddy validate
+          ^podman run -it --rm --volume $"(pwd):/srv:Z" quay.io/jwillikers/caddy-ovh:latest caddy validate
