@@ -2,6 +2,7 @@ https://cloud.jwillikers.io {
 	root * /var/www/html
 	file_server
 
+	encode zstd
 	php_fastcgi nextcloud.dns.podman:9000 {
 		env PATH /bin
 	}
