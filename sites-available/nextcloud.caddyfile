@@ -2,7 +2,11 @@ https://cloud.jwillikers.io {
 	root * /var/www/html
 	file_server
 
-	encode zstd
+	encode zstd gzip {
+		match {
+			header Content-Type application/javascript*
+		}
+	}
 	php_fastcgi nextcloud.dns.podman:9000 {
 		env PATH /bin
 	}
