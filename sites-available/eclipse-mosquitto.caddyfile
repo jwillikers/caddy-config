@@ -1,7 +1,7 @@
 http://mqtt.jwillikers.io, http://mqtt.lan.jwillikers.io {
-	reverse_proxy http://eclipse-mosquitto-pod.dns.podman:8080
+	reverse_proxy http://eclipse-mosquitto.dns.podman:8080
 }
 
 mqtt.jwillikers.io, mqtt.lan.jwillikers.io {
-	reverse_proxy eclipse-mosquitto-pod.dns.podman:8080
+	reverse_proxy eclipse-mosquitto.dns.podman:8080
 }

@@ -1,9 +1,9 @@
 http://omada.lan.jwillikers.io {
-	reverse_proxy http://omada-controller-pod.dns.podman:8088
+	reverse_proxy http://omada-controller.dns.podman:8088
 }
 
 omada.jwillikers.io, omada.lan.jwillikers.io {
-	reverse_proxy https://omada-controller-pod.dns.podman:8043 {
+	reverse_proxy https://omada-controller.dns.podman:8043 {
 		transport http {
 			tls_insecure_skip_verify
 		}

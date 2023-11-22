@@ -1,3 +1,3 @@
 home-assistant.jwillikers.io, home-assistant.lan.jwillikers.io {
-	reverse_proxy home-assistant-pod.dns.podman:8123
+	reverse_proxy home-assistant.dns.podman:8123
 }

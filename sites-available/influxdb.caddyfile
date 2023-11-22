@@ -1,7 +1,7 @@
 http://influxdb.lan.jwillikers.io {
-	reverse_proxy http://influxdb-pod.dns.podman:8086
+	reverse_proxy http://influxdb.dns.podman:8086
 }
 
 influxdb.jwillikers.io, influxdb.lan.jwillikers.io {
-	reverse_proxy influxdb-pod.dns.podman:8086
+	reverse_proxy influxdb.dns.podman:8086
 }
