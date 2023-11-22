@@ -45,8 +45,8 @@ https://vault.jwillikers.io, https://vault.lan.jwillikers.io {
 
 	# Proxy everything to Rocket
 	# if located at a sub-path the reverse_proxy line will look like:
-	#   reverse_proxy /subpath/* vaultwarden-pod.dns.podman:80
-	reverse_proxy vaultwarden-pod.dns.podman:8080 {
+	#   reverse_proxy /subpath/* vaultwarden.dns.podman:80
+	reverse_proxy vaultwarden.dns.podman:8080 {
 		# Send the true remote IP to Rocket, so that Vaultwarden can put this in the
 		# log, so that fail2ban can ban the correct IP.
 		header_up X-Real-IP {remote_host}
