@@ -1,0 +1,3 @@
+librenms.jwillikers.io, librenms.lan.jwillikers.io {
+	reverse_proxy librenms.dns.podman:8000
+}
