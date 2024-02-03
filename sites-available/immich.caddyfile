@@ -1,0 +1,3 @@
+immich.jwillikers.io, immich.lan.jwillikers.io {
+	reverse_proxy immich.dns.podman:2283
+}
