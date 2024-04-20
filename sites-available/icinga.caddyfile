@@ -1,3 +1,0 @@
-icinga.jwillikers.io, icinga.lan.jwillikers.io, icinga.jwillikers.io:5665, icinga.lan.jwillikers.io:5665 {
-	reverse_proxy icinga.dns.podman:5665
-}
