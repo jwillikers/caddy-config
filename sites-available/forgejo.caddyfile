@@ -1,0 +1,3 @@
+forgejo.jwillikers.io, forgejo.lan.jwillikers.io {
+	reverse_proxy forgejo.dns.podman:3000
+}

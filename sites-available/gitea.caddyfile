@@ -1,3 +1,0 @@
-gitea.jwillikers.io, gitea.lan.jwillikers.io {
-	reverse_proxy gitea.dns.podman:3000
-}
