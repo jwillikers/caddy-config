@@ -1,0 +1,3 @@
+koreader-sync.jwillikers.io, koreader-sync.lan.jwillikers.io {
+	reverse_proxy koreader-sync.dns.podman:7200
+}
