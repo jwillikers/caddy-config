@@ -1,4 +1,4 @@
 audiobookshelf.jwillikers.io, audiobookshelf.lan.jwillikers.io {
 	encode zstd gzip
-	reverse_proxy audiobookshelf.dns.podman:13378
+	reverse_proxy audiobookshelf.dns.podman:8080
 }
