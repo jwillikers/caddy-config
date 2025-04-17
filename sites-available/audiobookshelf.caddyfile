@@ -1,0 +1,3 @@
+audiobookshelf.jwillikers.io, audiobookshelf.lan.jwillikers.io {
+	reverse_proxy audiobookshelf.dns.podman:13378
+}
