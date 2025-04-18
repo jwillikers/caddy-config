@@ -1,0 +1,4 @@
+komga.jwillikers.io, komga.lan.jwillikers.io {
+	# todo encode zstd gzip?
+	reverse_proxy komga.dns.podman:25600
+}
