@@ -14,6 +14,7 @@
         "ifdef",
         "jellyfin",
         "jwillikers",
+        "komga",
         "miniflux",
         "minio",
         "mosquitto",
@@ -21,6 +22,7 @@
         "ostree",
         "podman",
         "syncthing",
-        "unifi"
+        "unifi",
+        "zstd"
     ]
 }
