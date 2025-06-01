@@ -1,0 +1,4 @@
+kavita.jwillikers.io, kavita.lan.jwillikers.io {
+	# todo encode zstd gzip?
+	reverse_proxy kavita.dns.podman:5000
+}
