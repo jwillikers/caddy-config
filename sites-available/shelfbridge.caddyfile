@@ -1,0 +1,3 @@
+shelfbridge.jwillikers.io, shelfbridge.lan.jwillikers.io {
+	reverse_proxy shelfbridge.dns.podman:8080
+}

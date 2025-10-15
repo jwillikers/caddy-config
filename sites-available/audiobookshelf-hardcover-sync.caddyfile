@@ -1,3 +1,0 @@
-audiobookshelf-hardcover-sync.jwillikers.io, audiobookshelf-hardcover-sync.lan.jwillikers.io {
-	reverse_proxy audiobookshelf-hardcover-sync.dns.podman:8080
-}

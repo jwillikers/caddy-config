@@ -21,6 +21,7 @@
         "nextcloud",
         "ostree",
         "podman",
+        "shelfbridge",
         "syncthing",
         "unifi",
         "zstd"
