@@ -1,0 +1,3 @@
+manga-manager.jwillikers.io, manga-manager.lan.jwillikers.io {
+	reverse_proxy manga-manager.dns.podman:3000
+}
