@@ -1,0 +1,3 @@
+komf.jwillikers.io, komf.lan.jwillikers.io {
+	reverse_proxy kavita.dns.podman:8085
+}
